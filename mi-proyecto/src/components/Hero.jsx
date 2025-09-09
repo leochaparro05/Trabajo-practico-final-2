@@ -2,9 +2,9 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="flex h-screen bg-gradient-to-r from-brand-cream to-brand-gold font-sans">
+    <section className="flex h-screen bg-brand-cream from-brand-cream to-brand-gold font-sans">
       {/* Left Side: Content */}
-      <div className="w-1/2 p-8 flex flex-col justify-center space-y-6 text-left">
+      <div className="w-1/2 pl-32 pr-8 pt-12 pb-8 flex flex-col justify-start space-y-6 text-left">
         {/* Title */}
         <h1 className="text-5xl md:text-6xl font-bold text-brand-dark leading-tight font-display">
           Charity Is An<br />
@@ -13,31 +13,62 @@ const Hero = () => {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-brand-dark/70 text-sm md:text-base max-w-lg">
-          We've spent the last 5 years helping over 25,0000 teams just like yourself create and sustain successful online support.
-        </p>
+        <p className="text-brand-dark/70 text-sm md:text-base max-w-sm leading-relaxed">
+  We've spent the last 5 years helping over 25,0000 teams just like yourself create and sustain successful online support.
+</p>
 
         {/* Button + Video Circle */}
-        <div className="flex items-center space-x-6 mt-6">
-          {/* Donate Button */}
-          <button className="bg-brand-green hover:bg-brand-green/90 text-white px-6 py-3 rounded-md font-medium transition-colors duration-200 shadow-md font-sans">
-            Donate Now
-          </button>
+      <div className="flex items-center space-x-6 mt-6">
+  {/* Donate Button */}
+  <button className="bg-brand-green hover:bg-brand-green/90 text-white px-6 py-3 rounded-md font-medium transition-colors duration-200 shadow-md font-sans">
+    Donate Now
+  </button>
 
-          {/* Video Play Circle */}
-          <div className="relative w-20 h-20 flex items-center justify-center cursor-pointer group">
-            <div className="absolute inset-0 bg-brand-gold rounded-full flex items-center justify-center group-hover:scale-105 transition-transform duration-300 animate-pulse">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-brand-dark" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </div>
-            {/* Circular Text (Simplified) */}
-            <div className="absolute inset-0 flex items-center justify-center text-xs font-medium text-brand-dark/80 select-none">
-              <span className="whitespace-nowrap">Learn about us through this video</span>
-            </div>
-          </div>
-        </div>
+ 
+   <svg className="w-16 h-8 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 64 32" strokeWidth="1.5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4 16 Q12 8, 20 16 T36 16 Q44 8, 52 16" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M56 12 L60 16 L56 20" />
+            </svg>
 
+  {/* Video Play Circle with Circular Text Outside */}
+<div className="relative">
+  <div className="w-36 h-36 rounded-full relative flex items-center justify-center cursor-pointer hover:border-slate-400 transition-colors bg-brand-beige">
+    {/* Play button in center */}
+    <div className="w-12 h-12 bg-brand-gold rounded-full flex items-center justify-center relative z-10">
+      <svg className="w-6 h-6 text-brand-dark ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+    </div>
+
+    {/* SVG Circular text - automático y perfectamente alineado */}
+    <svg className="w-36 h-36 absolute inset-0" viewBox="0 0 144 144">
+      <defs>
+        <path 
+          id="textcircle" 
+          d="M 72 20 A 52 52 0 1 1 72 124 A 52 52 0 1 1 72 20"
+          fill="none"
+        />
+      </defs>
+      <text 
+        className="text-xs font-medium" 
+        fill="#0B6B53" 
+        letterSpacing="1"
+        textAnchor="middle"
+        dominantBaseline="central"
+      >
+        <textPath 
+          href="#textcircle" 
+          startOffset="50%" 
+          textLength="290" 
+          lengthAdjust="spacingAndGlyphs"
+        >
+          Learn about us through this video
+        </textPath>
+      </text>
+    </svg>
+  </div>
+</div>
+</div>
         {/* Social Links */}
         <div className="flex space-x-8 mt-8 text-sm text-brand-dark font-sans">
           <a href="#" className="hover:text-brand-green transition-colors">Youtube</a>
@@ -50,13 +81,13 @@ const Hero = () => {
 
       {/* Right Side: Image */}
       <div className="w-1/2 relative">
-        <img
-          src="https://images.unsplash.com/photo-1559544350-fb2e204706f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+        <img 
+          src = "imagen1.jpg"
           alt="Man with child and soccer ball"
           className="w-full h-full object-cover"
         />
         {/* Yellow border overlay on right edge */}
-        <div className="absolute right-0 top-0 bottom-0 w-16 bg-brand-gold"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-30 bg-brand-gold"></div>
       </div>
     </section>
   );
