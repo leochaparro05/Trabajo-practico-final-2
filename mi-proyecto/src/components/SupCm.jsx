@@ -3,25 +3,25 @@ import React from 'react';
 const SupCm = () => {
   return (
     <section className="py-24 px-24 bg-brand-beige">
-      {/* Container */}
+     
       <div className="container-1100 mx-auto px-8 flex flex-col md:flex-row justify-between items-start gap-8">
-        {/* Left Side: Title and Images */}
+        
         <div className="flex flex-col space-y-6 w-full md:w-2/3">
-          {/* Title */}
+          
           <div className="text-left">
            <h2 className="text-4xl md:text-5xl font-bold text-brand-dark font-serif leading-tight">
   Support Your<br />
   Community
 </h2>
-            {/* Horizontal line */}
+           
             <div className="w-16 h-0.5 bg-brand-dark mt-3"></div>
-            {/* Subtitle */}
+            
             <p className="text-sm text-brand-dark/70 max-w-lg mt-4">
               The legal definition of a charitable organization (and of charity) varies between countries and in charity law affects charitable organizations also vary.
             </p>
           </div>
 
-          {/* Images Grid - Larger and closer together */}
+          {/* Images Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
             {/* Image 1: Covid-19 */}
             <div className="relative group overflow-hidden rounded-md">

@@ -4,9 +4,18 @@ export default function Navbar() {
   return (
     <nav className="w-full h-24 flex">
       {/* Izquierda: Logo sobre fondo crema */}
-      <div className="flex items-center justify-start pl-24 px-12 w-1/2 bg-brand-cream">
-        <span className="font-display text-2xl font-bold text-brand-dark tracking-tight">Ta</span>
-        <span className="ml-1 w-2 h-2 rounded-full bg-brand-green inline-block"></span>
+      <div className="flex items-center justify-start pl- px-12 w-1/2 bg-brand-cream">
+        <div className="flex items-center">
+          <div className="pl-20 font-serif text-3xl font-light italic tracking-wide text-brand-dark" style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}>
+            Ta
+          </div>
+          <div className="ml-1 flex items-center gap-0.5">
+            <div className="flex flex-col items-center justify-center relative h-8">
+              <div className="w-3 h-0.5 bg-brand-green transform rotate-12 rounded-full -mt-1.5"></div>
+              <div className="w-1.5 h-1.5 bg-brand-dark rounded-full mt-2.5"></div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Derecha: Links sobre fondo dorado */}

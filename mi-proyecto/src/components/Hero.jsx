@@ -3,23 +3,23 @@ import React from 'react';
 const Hero = () => {
   return (
     <section className="flex h-screen bg-brand-cream from-brand-cream to-brand-gold font-sans">
-      {/* Left Side: Content */}
+      {/* contenido lado izquierdo */}
       <div className="w-1/2 pl-32 pr-8 pt-12 pb-8 flex flex-col justify-start space-y-6 text-left">
-        {/* Title */}
+        {/* Titulo */}
         <h1 className="text-5xl md:text-6xl font-bold text-brand-dark leading-tight font-display">
           Charity Is An<br />
           Act Of A Soft<br />
           Heart.
         </h1>
 
-        {/* Subtitle */}
+
         <p className="text-brand-dark/70 text-sm md:text-base max-w-sm leading-relaxed">
   We've spent the last 5 years helping over 25,0000 teams just like yourself create and sustain successful online support.
 </p>
 
-        {/* Button + Video Circle */}
+        {/*boton y video circular */}
       <div className="flex items-center space-x-6 mt-6">
-  {/* Donate Button */}
+  {/* boton de donacion */}
   <button className="bg-brand-green hover:bg-brand-green/90 text-white px-6 py-3 rounded-md font-medium transition-colors duration-200 shadow-md font-sans">
     Donate Now
   </button>
@@ -30,17 +30,17 @@ const Hero = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M56 12 L60 16 L56 20" />
             </svg>
 
-  {/* Video Play Circle with Circular Text Outside */}
+  
 <div className="relative">
   <div className="w-36 h-36 rounded-full relative flex items-center justify-center cursor-pointer hover:border-slate-400 transition-colors bg-brand-beige">
-    {/* Play button in center */}
+    
     <div className="w-12 h-12 bg-brand-gold rounded-full flex items-center justify-center relative z-10">
       <svg className="w-6 h-6 text-brand-dark ml-0.5" fill="currentColor" viewBox="0 0 24 24">
         <path d="M8 5v14l11-7z"/>
       </svg>
     </div>
 
-    {/* SVG Circular text - automático y perfectamente alineado */}
+   
     <svg className="w-36 h-36 absolute inset-0" viewBox="0 0 144 144">
       <defs>
         <path 
@@ -69,7 +69,7 @@ const Hero = () => {
   </div>
 </div>
 </div>
-        {/* Social Links */}
+        {/* links redes sociales */}
         <div className="flex space-x-8 mt-8 text-sm text-brand-dark font-sans">
           <a href="#" className="hover:text-brand-green transition-colors">Youtube</a>
           <span className="text-brand-dark/40">•</span>
@@ -79,14 +79,14 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Right Side: Image */}
+      
       <div className="w-1/2 relative">
         <img 
           src = "imagen1.jpg"
           alt="Man with child and soccer ball"
           className="w-full h-full object-cover"
         />
-        {/* Yellow border overlay on right edge */}
+        
         <div className="absolute right-0 top-0 bottom-0 w-30 bg-brand-gold"></div>
       </div>
     </section>
