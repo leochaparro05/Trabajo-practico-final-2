@@ -7,6 +7,7 @@ import AbUs from './components/AbUs';
 import OurTeam from './components/OurTeam';
 import Testimonial from './components/Testimonial'; 
 import Stats2 from './components/Stats2';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <OurTeam />
       <Testimonial />
       <Stats2 />
+      <Footer />
     </div>
   );
 }

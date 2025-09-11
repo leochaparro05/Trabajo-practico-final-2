@@ -6,7 +6,7 @@ const Hero = () => {
       {/* contenido lado izquierdo */}
       <div className="w-1/2 pl-32 pr-8 pt-12 pb-8 flex flex-col justify-start space-y-6 text-left">
         {/* Titulo */}
-        <h1 className="text-5xl md:text-6xl font-bold text-brand-dark leading-tight font-display">
+        <h1 className="text-5xl md:text-6xl font-serif font-bold text-brand-dark leading-tight">
           Charity Is An<br />
           Act Of A Soft<br />
           Heart.

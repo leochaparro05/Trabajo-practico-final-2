@@ -16,8 +16,11 @@ const Stats2 = () => {
           <path d="M0,60 Q25,50 50,60 T100,100 L0,100 Z" fill="white" />
         </svg>
       </div>
-      
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+
+      {/* Masked decorative pattern */}
+      <div className="bg-white absolute inset-0 mask-[url('/images/curve-lines.png')] mask-cover opacity-5 z-0"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           {/* Left side - Text */}
           <div className="text-center lg:text-left mb-8 lg:mb-0">
@@ -29,7 +32,7 @@ const Stats2 = () => {
 
           {/* Right side - Button */}
           <div className="flex-shrink-0">
-            <button className="bg-yellow-400 text-black px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-300 transition-colors shadow-lg">
+            <button className="bg-yellow-400 text-black px-8 py-4 font-semibold text-lg hover:bg-yellow-300 transition-colors shadow-lg">
               Donate Now
             </button>
           </div>
