@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 const Testimonial = () => {
   const [currentReview, setCurrentReview] = useState(0);
 
-  const review = 
+  const reviews = [
+
     {
       id: 1,
       name: "Mustafa Kamal",
@@ -11,7 +12,8 @@ const Testimonial = () => {
       quote: "We're very happy that the challenge went well, and we're grateful that we have a partner in Charity Challenge whom we could trust to take the best possible care of our supporters.",
       image: "/imagen10.png",
       rating: 5
-    };
+    }
+]
   
 
   const nextReview = () => {
