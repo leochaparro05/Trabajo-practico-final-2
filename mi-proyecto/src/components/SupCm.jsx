@@ -74,11 +74,16 @@ const SupCm = () => {
               View All Campaign
             </a>
           </div>
-        </div>
-      </div>
 
-      {/* Horizontal line at the end */}
-      <div className="border-t border-brand-dark/20 mt-24 mb-12"></div>
+          
+        </div>
+        
+         
+      
+      </div>
+      <div className="mt-24 border-t border-gray-300 "></div>
+
+     
     </section>
   );
 };

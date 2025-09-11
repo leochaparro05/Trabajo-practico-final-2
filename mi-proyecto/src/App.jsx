@@ -4,6 +4,9 @@ import Navbar from './components/Navbar';
 import Stats from './components/Stats';
 import SupCm from './components/SupCm';
 import AbUs from './components/AbUs';
+import OurTeam from './components/OurTeam';
+import Testimonial from './components/Testimonial'; 
+import Stats2 from './components/Stats2';
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
       <Stats />
       <SupCm />
       <AbUs />
+      <OurTeam />
+      <Testimonial />
+      <Stats2 />
     </div>
   );
 }

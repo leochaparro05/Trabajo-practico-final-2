@@ -3,7 +3,7 @@ import React from 'react';
 const AbUs = () => {
   return (
     <section className="bg-brand-beige">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-24 py-6">
         <div className="flex flex-col lg:flex-row items-center gap-8">
           {/* Imagen a la izquierda con forma semicircular */}
           <div className="w-full lg:w-1/2">
@@ -50,7 +50,7 @@ const AbUs = () => {
         </div>
 
         {/* Línea divisoria al final, dentro del contenedor */}
-        <div className="border-t border-gray-300 mt-24 mb-8"></div>
+        <div className="border-t border-gray-300 mt-24"></div>
       </div>
     </section>
   );
